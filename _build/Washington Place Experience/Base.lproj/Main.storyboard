@@ -899,7 +899,7 @@
                                                 <rect key="frame" x="8" y="498" width="59" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="1" green="0.94813352823257446" blue="0.73426550626754761" alpha="0.35827803938356162" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Video"/>
+                                                <state key="normal" title="CLICK"/>
                                                 <connections>
                                                     <action selector="videoButton:" destination="dfc-ed-jgL" eventType="touchUpInside" id="8pG-oi-b1N"/>
                                                     <segue destination="5j0-CL-a5X" kind="modal" id="sIB-3Y-vhY"/>
@@ -2806,6 +2806,7 @@
         <image name="quinn-description" width="280" height="1145"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sIB-3Y-vhY"/>
         <segue reference="Bq7-Y0-tnw"/>
         <segue reference="fxZ-fQ-bqv"/>
         <segue reference="VAn-Mg-vbG"/>
