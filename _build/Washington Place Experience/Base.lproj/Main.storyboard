@@ -882,24 +882,24 @@
                         <viewControllerLayoutGuide type="bottom" id="BQh-DQ-Wjf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fpv-JJ-ymb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="910"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1315"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-tg-fGV">
-                                <rect key="frame" x="0.0" y="32" width="320" height="835"/>
+                                <rect key="frame" x="0.0" y="32" width="320" height="1242"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-JG-Lgw">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="835"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1242"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="quinn-2" translatesAutoresizingMaskIntoConstraints="NO" id="JxI-Sr-gKy">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="826"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" insetsLayoutMarginsFromSafeArea="NO" image="Gallery - Photo2 - Detail View - edited" translatesAutoresizingMaskIntoConstraints="NO" id="JxI-Sr-gKy">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="1245"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1245" id="Q67-sF-8tD"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFq-k6-P2c">
-                                                <rect key="frame" x="8" y="498" width="59" height="51"/>
+                                                <rect key="frame" x="23" y="861" width="276" height="151"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="1" green="0.94813352823257446" blue="0.73426550626754761" alpha="0.35827803938356162" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Video"/>
                                                 <connections>
                                                     <action selector="videoButton:" destination="dfc-ed-jgL" eventType="touchUpInside" id="8pG-oi-b1N"/>
                                                     <segue destination="5j0-CL-a5X" kind="modal" id="sIB-3Y-vhY"/>
@@ -908,7 +908,9 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="835" id="gf7-tV-xKa"/>
+                                            <constraint firstItem="JxI-Sr-gKy" firstAttribute="leading" secondItem="c7D-JG-Lgw" secondAttribute="leading" id="Fni-SY-jnz"/>
+                                            <constraint firstAttribute="height" constant="1242" id="cVS-QQ-6wI"/>
+                                            <constraint firstItem="JxI-Sr-gKy" firstAttribute="top" secondItem="c7D-JG-Lgw" secondAttribute="top" id="ela-5o-EEA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -922,7 +924,7 @@
                                 </constraints>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="bar-yellow" translatesAutoresizingMaskIntoConstraints="NO" id="V4F-TT-Bv2">
-                                <rect key="frame" x="0.0" y="869" width="320" height="41"/>
+                                <rect key="frame" x="0.0" y="1274" width="320" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="GFv-NZ-Vzy"/>
                                 </constraints>
@@ -933,16 +935,15 @@
                                     <constraint firstAttribute="width" constant="320" id="Yjv-kc-KbK"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-pi-TG3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tl2-pi-TG3">
                                 <rect key="frame" x="0.0" y="20" width="55" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="btn-close-yellow"/>
                                 <connections>
                                     <segue destination="F1F-gX-OEn" kind="modal" modalTransitionStyle="crossDissolve" id="jAi-bb-dRJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXU-RT-ErU">
-                                <rect key="frame" x="139" y="877" width="43" height="23"/>
+                                <rect key="frame" x="139" y="1282" width="43" height="23"/>
                                 <attributedString key="attributedText">
                                     <fragment content="2 of 11">
                                         <attributes>
@@ -955,7 +956,7 @@
                                 <color key="highlightedColor" red="0.51836568120000004" green="0.48803138730000001" blue="0.35810101030000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPn-W9-TYv">
-                                <rect key="frame" x="258" y="870" width="62" height="40"/>
+                                <rect key="frame" x="258" y="1275" width="62" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0QQ-3J-ayv"/>
                                     <constraint firstAttribute="width" constant="62" id="OoA-HH-eJT"/>
@@ -966,7 +967,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyf-eP-Tv1">
-                                <rect key="frame" x="0.0" y="870" width="62" height="40"/>
+                                <rect key="frame" x="0.0" y="1275" width="62" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Q32-ZA-bX3"/>
                                     <constraint firstAttribute="width" constant="62" id="fwD-Gu-PKW"/>
@@ -984,10 +985,11 @@
                             <constraint firstAttribute="trailing" secondItem="V4F-TT-Bv2" secondAttribute="trailing" id="7t0-7Z-hNx"/>
                             <constraint firstItem="xfe-6R-lp1" firstAttribute="leading" secondItem="fpv-JJ-ymb" secondAttribute="leading" id="BHd-pF-PNX"/>
                             <constraint firstItem="ltx-tg-fGV" firstAttribute="top" secondItem="xfe-6R-lp1" secondAttribute="bottom" id="Fkr-Fz-KqM"/>
+                            <constraint firstItem="ltx-tg-fGV" firstAttribute="leading" secondItem="tl2-pi-TG3" secondAttribute="leading" id="FtU-Al-bLp"/>
                             <constraint firstAttribute="trailing" secondItem="V4F-TT-Bv2" secondAttribute="trailing" id="KD3-vZ-pNm"/>
                             <constraint firstAttribute="trailing" secondItem="ltx-tg-fGV" secondAttribute="trailing" id="MhP-2e-LA2"/>
                             <constraint firstItem="TPn-W9-TYv" firstAttribute="firstBaseline" secondItem="Uyf-eP-Tv1" secondAttribute="firstBaseline" id="PjG-1T-fqI"/>
-                            <constraint firstItem="V4F-TT-Bv2" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" constant="2" id="Qwp-ih-tuJ"/>
+                            <constraint firstItem="V4F-TT-Bv2" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" id="Qwp-ih-tuJ"/>
                             <constraint firstAttribute="trailing" secondItem="xfe-6R-lp1" secondAttribute="trailing" id="Sv5-ei-3DJ"/>
                             <constraint firstItem="ltx-tg-fGV" firstAttribute="leading" secondItem="fpv-JJ-ymb" secondAttribute="leading" id="Wlz-Vx-lDm"/>
                             <constraint firstItem="Uyf-eP-Tv1" firstAttribute="leading" secondItem="V4F-TT-Bv2" secondAttribute="leading" id="X0k-8B-fV7"/>
@@ -1001,21 +1003,22 @@
                             <constraint firstItem="xfe-6R-lp1" firstAttribute="top" secondItem="fpv-JJ-ymb" secondAttribute="top" id="j1d-Jh-884"/>
                             <constraint firstItem="V4F-TT-Bv2" firstAttribute="leading" secondItem="fpv-JJ-ymb" secondAttribute="leading" id="mEe-is-OUp"/>
                             <constraint firstItem="BQh-DQ-Wjf" firstAttribute="top" secondItem="V4F-TT-Bv2" secondAttribute="bottom" id="oUj-gy-sRx"/>
-                            <constraint firstItem="V4F-TT-Bv2" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" constant="2" id="p8Z-GF-sJw"/>
+                            <constraint firstItem="V4F-TT-Bv2" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" id="p8Z-GF-sJw"/>
                             <constraint firstItem="Uyf-eP-Tv1" firstAttribute="bottom" secondItem="BQh-DQ-Wjf" secondAttribute="top" id="pPS-6V-Yi8"/>
-                            <constraint firstItem="XXU-RT-ErU" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" constant="10" id="tBi-zi-d5r"/>
+                            <constraint firstItem="tl2-pi-TG3" firstAttribute="top" secondItem="LC8-F0-LiH" secondAttribute="bottom" id="ram-Sr-OYR"/>
+                            <constraint firstItem="XXU-RT-ErU" firstAttribute="top" secondItem="ltx-tg-fGV" secondAttribute="bottom" constant="8" id="tBi-zi-d5r"/>
                             <constraint firstItem="Uyf-eP-Tv1" firstAttribute="baseline" secondItem="TPn-W9-TYv" secondAttribute="baseline" id="uSW-un-Y8v"/>
                             <constraint firstItem="V4F-TT-Bv2" firstAttribute="leading" secondItem="fpv-JJ-ymb" secondAttribute="leading" id="wOm-Re-O2D"/>
                             <constraint firstItem="XXU-RT-ErU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uyf-eP-Tv1" secondAttribute="trailing" constant="8" symbolic="YES" id="xgZ-1E-seg"/>
                             <constraint firstItem="V4F-TT-Bv2" firstAttribute="leading" secondItem="fpv-JJ-ymb" secondAttribute="leading" id="xoU-B9-OM6"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="320" height="910"/>
+                    <size key="freeformSize" width="320" height="1315"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZrE-aU-m1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dfc-ed-jgL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2296" y="2109"/>
+            <point key="canvasLocation" x="2317" y="1577.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="23i-bP-0pf">
@@ -2770,6 +2773,7 @@
     </scenes>
     <resources>
         <image name="Gallery - Home" width="320" height="1781"/>
+        <image name="Gallery - Photo2 - Detail View - edited" width="320" height="1219"/>
         <image name="Gallery - Queen - Home" width="320" height="1023"/>
         <image name="Menu" width="320" height="568"/>
         <image name="Queen-Clock" width="320" height="1184"/>
@@ -2795,7 +2799,6 @@
         <image name="quinn-1" width="320" height="768"/>
         <image name="quinn-10" width="320" height="477"/>
         <image name="quinn-11" width="320" height="520"/>
-        <image name="quinn-2" width="320" height="810"/>
         <image name="quinn-3" width="320" height="415"/>
         <image name="quinn-4" width="320" height="799"/>
         <image name="quinn-5" width="320" height="1005"/>
@@ -2818,7 +2821,7 @@
         <segue reference="chS-4B-Ij0"/>
         <segue reference="9ge-eT-NMO"/>
         <segue reference="5M8-zK-8FP"/>
-        <segue reference="qgV-Dg-n9h"/>
+        <segue reference="gCp-jL-qfj"/>
         <segue reference="ysB-kz-E2M"/>
         <segue reference="0MK-vU-Uny"/>
         <segue reference="eza-Rb-kra"/>
